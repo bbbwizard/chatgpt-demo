@@ -13,6 +13,10 @@ export const post: APIRoute = async (context) => {
     return new Response('No input text')
   }
 
+  if (!apiKey) {
+    return new Response('No api text')
+  }
+
   const completion = await fetch('https://api.openai.com/v1/chat/completions', {
     headers: {
       'Content-Type': 'application/json',
