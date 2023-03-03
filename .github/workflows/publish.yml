@@ -36,4 +36,4 @@ jobs:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: 840925b4a7bab9473ef67112fc07e923
           projectName: chatgpt-demo
-          directory: .vercel
+          directory: .
